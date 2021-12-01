@@ -9,7 +9,7 @@ namespace AoC_2021_Day1
         {
             // Part 1
 
-            var fileName = @"C:\Users\trent.huhn\Google Drive\Documents\2021\AoC\AoC_2021_Day1\input.txt";
+            var fileName = @"..\..\..\input.txt";
             Console.WriteLine($"Reading in {fileName}...");
             string[] lines = System.IO.File.ReadAllLines(fileName);
 
