@@ -9,6 +9,8 @@ namespace AoC_2021_Day2
         {
             // Part 1
 
+            var start = DateTime.Now;
+
             var fileName = @"..\..\..\input.txt";
             Console.WriteLine($"Reading in {fileName}...");
             string[] lines = System.IO.File.ReadAllLines(fileName);
@@ -31,10 +33,13 @@ namespace AoC_2021_Day2
                     curY -= dir.Item2;
             }
 
-            Console.WriteLine($"Final x: {curX}, final y: {curY}, multiplied: {curX*curY}");
+            var end = DateTime.Now;
+            var diff = (end - start).TotalMilliseconds;
+            Console.WriteLine($"Final x: {curX}, final y: {curY}, multiplied: {curX*curY} ({diff} ms)");
 
             // Part 2
 
+            start = DateTime.Now;
             Console.WriteLine("Calculting position for Part 2...");
             curX = 0;
             curY = 0;
@@ -52,7 +57,9 @@ namespace AoC_2021_Day2
                     aim -= dir.Item2;
             }
 
-            Console.WriteLine($"Final x: {curX}, final y: {curY}, multiplied: {curX * curY}");
+            end = DateTime.Now;
+            diff = (end - start).TotalMilliseconds;
+            Console.WriteLine($"Final x: {curX}, final y: {curY}, multiplied: {curX * curY} ({diff} ms)");
 
         }
     }
