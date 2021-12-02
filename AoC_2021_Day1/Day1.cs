@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AoC_2021_Day1
 {
-    class Program
+    class Day1
     {
         static void Main(string[] args)
         {
@@ -15,7 +15,10 @@ namespace AoC_2021_Day1
 
             Console.WriteLine("Finished reading in input file, converting to ints...");
 
-            var nums = lines.Select(x => int.Parse(x)).ToList(); // Should check to make sure we can parse each line as an int
+            var nums = lines.Select(s => Int32.TryParse(s, out int n) ? n : (int?)null)
+                            .Where(n => n.HasValue)
+                            .Select(n => n.Value)
+                            .ToList();
 
             Console.WriteLine("Counting number of increases...");
 
