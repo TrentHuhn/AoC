@@ -1,15 +1,15 @@
 ﻿using System;
 using System.Linq;
 
-namespace AoC_2021_Day1
+namespace AoC_2021
 {
     class Day1
     {
-        static void Main(string[] args)
+        public static void Run()
         {
             // Part 1
 
-            var fileName = @"..\..\..\input.txt";
+            var fileName = @"..\..\..\Day1\input.txt";
             Console.WriteLine($"Reading in {fileName}...");
             string[] lines = System.IO.File.ReadAllLines(fileName);
 

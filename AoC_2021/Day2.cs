@@ -1,17 +1,17 @@
 ﻿using System;
 using System.Linq;
 
-namespace AoC_2021_Day2
+namespace AoC_2021
 {
     class Day2
     {
-        static void Main(string[] args)
+        public static void Run()
         {
             // Part 1
 
             var start = DateTime.Now;
 
-            var fileName = @"..\..\..\input.txt";
+            var fileName = @"..\..\..\Day2\input.txt";
             Console.WriteLine($"Reading in {fileName}...");
             string[] lines = System.IO.File.ReadAllLines(fileName);
 
