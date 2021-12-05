@@ -18,7 +18,9 @@ namespace AoC_2021
 
             Console.WriteLine($"Finished reading in input file ({lines.Length} lines), parsing input...");
 
-            var ventLines = lines.Select(x => x.Split(" -> ").Select(y => new Tuple<int, int>(int.Parse(y.Split(',')[0]), int.Parse(y.Split(',')[1]))).ToArray()).Select(z => new Line(z[0], z[1]));
+            var ventLines = lines.Select(x => x.Split(" -> ") // split into pairs of coordinates
+                .Select(y => (int.Parse(y.Split(',')[0]), int.Parse(y.Split(',')[1]))).ToArray()) // Split each coord into x and y values and convert to a Tuple
+                .Select(z => new Line(z[0], z[1])); // Create new Line object based on the start and end coordinate Tuples
 
             // Instantiate grid based on global max of all x and y coords
             var maxX = Math.Max(ventLines.Max(x => x.Start.Item1), ventLines.Max(x => x.End.Item1));
@@ -87,7 +89,7 @@ namespace AoC_2021
             {
                 for (var j = 0; j <= maxY; j++)
                 {
-                    grid[i, j] = 0; // Instantiate each node value as 0 (this represents # of overlapping lines at this coordinate)
+                    grid[i, j] = 0;
                 }
             }
 
@@ -121,9 +123,7 @@ namespace AoC_2021
                 {
                     if (grid[i, j] >= 2)
                         solution++;
-                    //Console.Write($"{grid[i, j]} ");
                 }
-                //Console.WriteLine();
             }
             end = DateTime.Now;
             diff = (end - start).TotalMilliseconds;
@@ -135,26 +135,14 @@ namespace AoC_2021
 
     public class Line
     {
-        public Tuple<int, int> Start { get; set; }
-        public Tuple<int, int> End { get; set; }
+        public (int, int) Start { get; set; }
+        public (int, int) End { get; set; }
 
-        public Line(Tuple<int, int> start, Tuple<int, int> end)
+        public Line((int, int) start, (int, int) end)
         {
             Start = start;
             End = end;
         }
     }
-    public class GridPoint
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
-        public int NumLines { get; set; }
 
-        public GridPoint(int x, int y)
-        {
-            X = X;
-            Y = Y;
-            NumLines = 0;
-        }
-    }
 }
