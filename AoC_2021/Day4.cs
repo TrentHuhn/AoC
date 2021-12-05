@@ -203,17 +203,14 @@ namespace AoC_2021
 
                     }
 
-                    if (bingoBoard.Winner)
+                    // Now check to see if we have any non-winner boards remaining
+                    if (bingoBoard.Winner && !bingoBoards.Any(x => !x.Winner))
                     {
-                        // Now check to see if we have any non-winner boards remaining
-                        if (!bingoBoards.Any(x => !x.Winner))
-                        {
-                            Console.WriteLine("Last board won");
-                            losingBoard = bingoBoard;
-                            losingNum = num;
-                            goto Part2Loser;
-                        }
-                    }
+                        Console.WriteLine("Last board won");
+                        losingBoard = bingoBoard;
+                        losingNum = num;
+                        goto Part2Loser;
+                    }                    
                 }
             }
 
