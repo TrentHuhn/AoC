@@ -6,6 +6,9 @@ namespace AoC_2021
 {
     class Day5
     {
+        /// <summary>
+        /// Day 5 - Locating intersecting vent lines
+        /// </summary>
         public static void Run()
         {
             // Part 1

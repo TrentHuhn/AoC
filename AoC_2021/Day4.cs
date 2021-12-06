@@ -6,6 +6,9 @@ namespace AoC_2021
 {
     class Day4
     {
+        /// <summary>
+        /// Day 4 - Bingo boards
+        /// </summary>
         public static void Run()
         {
             // Part 1
