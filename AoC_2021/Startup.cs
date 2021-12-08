@@ -16,7 +16,7 @@ namespace AoC_2021
             // Day 2
             // Day1.Run();
 
-            // Day 3
+            // Day 3 - Isolating bits - Done in Excel
 
             // Day 4
             // Day4.Run();
@@ -27,8 +27,10 @@ namespace AoC_2021
             // Day 6
             // Day6.Run();
             
-            // Day 7
-            Day7.Run();
+            // Day 7 - Crabs in submarines - Done in Excel
+
+            // Day 8
+            Day8.Run();
         }
     }
 }
