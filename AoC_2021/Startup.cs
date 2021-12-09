@@ -26,11 +26,14 @@ namespace AoC_2021
 
             // Day 6
             // Day6.Run();
-            
+
             // Day 7 - Crabs in submarines - Done in Excel
 
             // Day 8
-            Day8.Run();
+            // Day8.Run();
+
+            // Day 9
+            Day9.Run();
         }
     }
 }
