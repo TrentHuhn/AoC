@@ -131,48 +131,48 @@ namespace AoC_2021
 
         static int GetScore(char charToCheck)
         {
-            int multiplier = 1;
+            int score;
             switch (charToCheck)
             {
                 case ')':
-                    multiplier = SCORES_PART1[0];
+                    score = SCORES_PART1[0];
                     break;
                 case ']':
-                    multiplier = SCORES_PART1[1];
+                    score = SCORES_PART1[1];
                     break;
                 case '}':
-                    multiplier = SCORES_PART1[2];
+                    score = SCORES_PART1[2];
                     break;
                 case '>':
-                    multiplier = SCORES_PART1[3];
+                    score = SCORES_PART1[3];
                     break;
                 default:
-                    throw new Exception("Invalid end character when lookingup multiplier");
+                    throw new Exception("Invalid end character when looking up score for part 1");
             }
-            return multiplier;
+            return score;
         }
 
         static int GetScorePart2(char charToCheck)
         {
-            int multiplier = 1;
+            int score;
             switch (charToCheck)
             {
                 case ')':
-                    multiplier = SCORES_PART2[0];
+                    score = SCORES_PART2[0];
                     break;
                 case ']':
-                    multiplier = SCORES_PART2[1];
+                    score = SCORES_PART2[1];
                     break;
                 case '}':
-                    multiplier = SCORES_PART2[2];
+                    score = SCORES_PART2[2];
                     break;
                 case '>':
-                    multiplier = SCORES_PART2[3];
+                    score = SCORES_PART2[3];
                     break;
                 default:
-                    throw new Exception("Invalid end character when lookingup multiplier");
+                    throw new Exception("Invalid end character when looking up score for part 2");
             }
-            return multiplier;
+            return score;
         }
 
         public class Chunk
