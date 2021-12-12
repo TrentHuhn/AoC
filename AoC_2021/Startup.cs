@@ -36,7 +36,10 @@ namespace AoC_2021
             // Day9.Run();
 
             // Day 10
-            Day10.Run();
+            // Day10.Run();
+
+            // Day 11
+            Day11.Run();
         }
     }
 }
