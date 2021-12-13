@@ -14,7 +14,7 @@ namespace AoC_2021
         public static void Run()
         {
 
-            // Part 1 - Find number of paths visiting small caves at most once
+            // Part 1 - do the first fold
 
             var start = DateTime.Now;
             var fileName = @"..\..\..\Day13\input.txt";
