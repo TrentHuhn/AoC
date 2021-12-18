@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AoC_2021
 {
-    class Day8
+    class Day08
     {
         /// <summary>
         /// Day 8 - Seven-digit displays
@@ -15,7 +15,7 @@ namespace AoC_2021
             // Part 1 - Easy numbers
 
             var start = DateTime.Now;
-            var fileName = @"..\..\..\Day8\input.txt";
+            var fileName = @"..\..\..\Inputs\input08.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             string[] lines = System.IO.File.ReadAllLines(fileName);

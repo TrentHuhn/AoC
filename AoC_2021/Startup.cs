@@ -10,37 +10,23 @@ namespace AoC_2021
     {
         static void Main(string[] args)
         {
-            // Day1.Run();
-
-            // Day1.Run();
-
-            // Day 3 - Isolating bits - Done in Excel
-
-            // Day4.Run();
-
-            // Day5.Run();
-
-            // Day6.Run();
-
+            // Day01.Run();
+            // Day01.Run();
+            // Day0 3 - Isolating bits - Done in Excel
+            // Day04.Run();
+            // Day05.Run();
+            // Day06.Run();
             // Day 7 - Crabs in submarines - Done in Excel
-
-            // Day8.Run();
-
-            // Day9.Run();
-
+            // Day08.Run();
+            // Day09.Run();
             // Day10.Run();
-
             // Day11.Run();
-
             // Day12.Run();
-
             // Day13.Run();
-
             // Day14.Run();
-
             // Day15.Run();
-
             Day16.Run();
+            // Day17.Run();
         }
     }
 }

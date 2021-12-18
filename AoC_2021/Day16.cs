@@ -73,7 +73,7 @@ namespace AoC_2021
                 EvaluatePackets(operatorPacket);
             }
 
-            // We've evaluated all operand sub-packet, not calculate this packet's value
+            // We've evaluated all operand sub-packet, now calculate this packet's value
             switch(packet.TypeID)
             {
                 case 0: // Sum

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AoC_2021
 {
-    class Day4
+    class Day04
     {
         /// <summary>
         /// Day 4 - Bingo boards
@@ -15,7 +15,7 @@ namespace AoC_2021
 
             var start = DateTime.Now;
 
-            var fileName = @"..\..\..\Day4\input.txt";
+            var fileName = @"..\..\..\Inputs\input04.txt";
             Console.WriteLine($"Reading in {fileName}");
             string[] lines = System.IO.File.ReadAllLines(fileName);
 

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AoC_2021
 {
-    class Day5
+    class Day05
     {
         /// <summary>
         /// Day 5 - Locating intersecting vent lines
@@ -15,7 +15,7 @@ namespace AoC_2021
 
             var start = DateTime.Now;
 
-            var fileName = @"..\..\..\Day5\input.txt";
+            var fileName = @"..\..\..\Inputs\input05.txt";
             Console.WriteLine($"Reading in {fileName}");
             string[] lines = System.IO.File.ReadAllLines(fileName);
 

@@ -4,7 +4,7 @@ using System.Linq;
 namespace AoC_2021
 {
 
-    class Day6
+    class Day06
     {
         /// <summary>
         ///  Day 6 - Lanternfish population
@@ -15,7 +15,7 @@ namespace AoC_2021
 
             var start = DateTime.Now;
             var maxDays = 256; // Set maximum # of days to run simulation
-            var fileName = @"..\..\..\Day6\input.txt";
+            var fileName = @"..\..\..\Inputs\input06.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             string[] lines = System.IO.File.ReadAllLines(fileName);

@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace AoC_2021
 {
-    class Day2
+    class Day02
     {
         public static void Run()
         {
@@ -11,7 +11,7 @@ namespace AoC_2021
 
             var start = DateTime.Now;
 
-            var fileName = @"..\..\..\Day2\input.txt";
+            var fileName = @"..\..\..\Inputs\input02.txt";
             Console.WriteLine($"Reading in {fileName}...");
             string[] lines = System.IO.File.ReadAllLines(fileName);
 

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace AoC_2021
 {
-    class Day9
+    class Day09
     {
         /// <summary>
         /// Day 9 - Smoke Basin
@@ -15,7 +15,7 @@ namespace AoC_2021
             // Part 1 - Find all low points
 
             var start = DateTime.Now;
-            var fileName = @"..\..\..\Day9\input.txt";
+            var fileName = @"..\..\..\Inputs\input09.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             var lines = System.IO.File.ReadAllLines(fileName);

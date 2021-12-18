@@ -3,13 +3,13 @@ using System.Linq;
 
 namespace AoC_2021
 {
-    class Day1
+    class Day01
     {
         public static void Run()
         {
             // Part 1
 
-            var fileName = @"..\..\..\Day1\input.txt";
+            var fileName = @"..\..\..\Inputs\input01.txt";
             Console.WriteLine($"Reading in {fileName}...");
             string[] lines = System.IO.File.ReadAllLines(fileName);
 
