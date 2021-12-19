@@ -6,7 +6,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Day8\" />
+    <Compile Remove="Day8\**" />
+    <EmbeddedResource Remove="Day8\**" />
+    <None Remove="Day8\**" />
   </ItemGroup>
 
 </Project>
