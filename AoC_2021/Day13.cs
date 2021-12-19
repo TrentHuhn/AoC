@@ -17,7 +17,7 @@ namespace AoC_2021
             // Part 1 - do the first fold
 
             var start = DateTime.Now;
-            var fileName = @"..\..\..\Day13\input.txt";
+            var fileName = @"..\..\..\Inputs\input13.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             var lines = System.IO.File.ReadAllLines(fileName);

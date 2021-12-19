@@ -17,7 +17,7 @@ namespace AoC_2021
             // Part 1 - Find number of paths visiting small caves at most once
 
             var start = DateTime.Now;
-            var fileName = @"..\..\..\Day12\input.txt";
+            var fileName = @"..\..\..\Inputs\input12.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             var lines = System.IO.File.ReadAllLines(fileName);

@@ -25,8 +25,8 @@ namespace AoC_2021
             // Day13.Run();
             // Day14.Run();
             // Day15.Run();
-            Day16.Run();
-            // Day17.Run();
+            // Day16.Run();
+            Day17.Run();
         }
     }
 }

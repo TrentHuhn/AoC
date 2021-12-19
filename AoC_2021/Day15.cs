@@ -17,7 +17,7 @@ namespace AoC_2021
             // Part 1 - Least risk path
 
             var start = DateTime.Now;
-            var fileName = @"..\..\..\Day15\input.txt";
+            var fileName = @"..\..\..\Inputs\input15.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             var lines = System.IO.File.ReadAllLines(fileName);

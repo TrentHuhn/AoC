@@ -18,7 +18,7 @@ namespace AoC_2021
             // Part 1 - Find number of flashes after 100 steps
 
             var start = DateTime.Now;
-            var fileName = @"..\..\..\Day11\input.txt";
+            var fileName = @"..\..\..\Inputs\input11.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             var lines = System.IO.File.ReadAllLines(fileName);

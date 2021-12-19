@@ -20,7 +20,7 @@ namespace AoC_2021
             // Part 1 - Most common polymer element
 
             var start = DateTime.Now;
-            var fileName = @"..\..\..\Day14\input.txt";
+            var fileName = @"..\..\..\Inputs\input14.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             var lines = System.IO.File.ReadAllLines(fileName);

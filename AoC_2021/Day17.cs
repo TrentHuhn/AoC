@@ -5,19 +5,19 @@ using System.Linq;
 
 namespace AoC_2021
 {
-    class Day16
+    class Day17
     {
 
         /// <summary>
-        /// Day 16 - Packet Decoder
+        /// Day 17 - Trick Shot
         /// </summary>
         public static void Run()
         {
 
-            // Part 1 - Sum version numbers
+            // Part 1 - Compute highest velocity to land in target zone
 
             var start = DateTime.Now;
-            var fileName = @"..\..\..\Inputs\input16.txt";
+            var fileName = @"..\..\..\Inputs\input17.txt";
 
             Console.WriteLine($"Reading in {fileName}");
             var lines = System.IO.File.ReadAllLines(fileName);
