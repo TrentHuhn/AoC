@@ -363,4 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 
 # Advent of Code input files
-AoC*/[Dd]ay*/*.txt
+input*.txt
