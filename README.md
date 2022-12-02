@@ -1,4 +1,5 @@
-# AoC_2021
-Repo for solutions to <a href="https://adventofcode.com/">Advent of Code 2021</a>
+# AoC
+Repo for solutions to <a href="https://adventofcode.com/">Advent of Code</a>
 
-All code is C# using .NET 5.0
+2021 code is C# using .NET 5.0
+2022 code is using Python 3.7
