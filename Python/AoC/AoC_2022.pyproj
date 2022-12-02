@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f7fc544c-935b-4112-8099-6be546556873</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>2022\1\code.py</StartupFile>
+    <StartupFile>2022\2\code.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="2022\1\code.py" />
+    <Compile Include="2022\2\code.py" />
     <Compile Include="init.py">
       <SubType>Code</SubType>
     </Compile>
@@ -29,11 +30,15 @@
   <ItemGroup>
     <Folder Include="2022\" />
     <Folder Include="2022\1\" />
+    <Folder Include="2022\2\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="2022\1\input.txt" />
     <Content Include="2022\1\link.url" />
     <Content Include="2022\1\statement.html" />
+    <Content Include="2022\2\input.txt" />
+    <Content Include="2022\2\link.url" />
+    <Content Include="2022\2\statement.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
