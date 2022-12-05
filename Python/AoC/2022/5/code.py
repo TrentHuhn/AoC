@@ -7,7 +7,7 @@ import time, re
 with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
     lines = input_file.read().split('\n')
 
-
+########### PART ONE ##################
 print("Starting Part One")
 start_time = time.time()
 
@@ -38,6 +38,8 @@ for i in range(0,numStacks):
 part_one_time = time.time() - start_time
 print("Part One ({time} s): {value}".format(time = round(part_one_time,3), value = str(finalConfig)))
 
+########### PART TWO ##################
+print("Starting Part Two")
 start_time = time.time()
 
 stacks = []
