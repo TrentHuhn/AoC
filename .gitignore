@@ -364,3 +364,4 @@ FodyWeavers.xsd
 
 # Advent of Code input files
 input*.txt
+secrets.txt

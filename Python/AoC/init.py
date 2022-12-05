@@ -5,9 +5,12 @@
 # Author = Alexe Simon
 # Date = 06/12/2018
 
+with open((__file__.rstrip("init.py")+"secrets.txt"), 'r') as input_file:
+    USER_SESSION_ID = input_file.read()
+
 # USER SPECIFIC PARAMETERS
 base_pos = "./"            # Folders will be created here. If you want to make a parent folder, change this to ex "./adventofcode/"
-USER_SESSION_ID = "53616c7465645f5f38d1578025147c1ab7d8f3deff97dbaebe568308e6619c1fcaa6a474e35d0dc256f88bd0883ce96ca2eee8c727e7ac64b56e8f42453460ff"       # Get your session by inspecting the session cookie content in your web browser while connected to adventofcode and paste it here as plain text in between the ". Leave at is to not download inputs.
+# USER_SESSION_ID = ""       # Get your session by inspecting the session cookie content in your web browser while connected to adventofcode and paste it here as plain text in between the ". Leave at is to not download inputs.
 DOWNLOAD_STATEMENTS = True # Set to false to not download statements. Note that only part one is downloaded (since you need to complete it to access part two)
 DOWNLOAD_INPUTS = True     # Set to false to not download inputs. Note that if the USER_SESSION_ID is wrong or left empty, inputs will not be downloaded.
 MAKE_CODE_TEMPLATE = True  # Set to false to not make code templates. Note that even if OVERWRITE is set to True, it will never overwrite codes.
