@@ -4,7 +4,7 @@
 
 import time, re
 
-with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
+with open((__file__.rstrip("code.py")+"input_aoc_2022_day05_large.txt"), 'r') as input_file:
     lines = input_file.read().split('\n')
 
 ########### PART ONE ##################
@@ -13,15 +13,16 @@ start_time = time.time()
 
 numStacks = 9
 stacks = []
+maxStackHeight = lines.index('') - 2
 # set up initial stack configuration
-for i in range(7,-1,-1):    
+for i in range(maxStackHeight,-1,-1):    
     for j in range(0,numStacks):
         if len(stacks) < numStacks: stacks.append([])
         curCrate = lines[i][4*j+1]
         if curCrate != ' ': stacks[j].append(lines[i][4*j+1])
 
 # iterate through all moves
-for i in range(10,len(lines)):
+for i in range(maxStackHeight+3,len(lines)):
     inst = re.split('\D+',lines[i]) # split on non-digits
     numMoved = int(inst[1])
     fromStack = int(inst[2]) - 1
@@ -44,14 +45,14 @@ start_time = time.time()
 
 stacks = []
 # set up initial stack configuration
-for i in range(7,-1,-1):    
+for i in range(maxStackHeight,-1,-1):    
     for j in range(0,numStacks):
         if len(stacks) < numStacks: stacks.append([])
         curCrate = lines[i][4*j+1]
         if curCrate != ' ': stacks[j].append(lines[i][4*j+1])
 
 # iterate through all moves
-for i in range(10,len(lines)):
+for i in range(maxStackHeight+3,len(lines)):
     inst = re.split('\D+',lines[i]) # split on non-digits
     numMoved = int(inst[1])
     fromStack = int(inst[2]) - 1
