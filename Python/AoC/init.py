@@ -22,7 +22,7 @@ OVERWRITE = False          # If you really need to download the whole thing agai
 date = "December 2022"              # Date automatically put in the code templates.
 starting_advent_of_code_year = 2022 # You can go as early as 2015.
 last_advent_of_code_year = 2022     # The setup will download all advent of code data up until that date included
-last_advent_of_code_day = 5         # If the year isn't finished, the setup will download days up until that day included for the last year
+last_advent_of_code_day = 6         # If the year isn't finished, the setup will download days up until that day included for the last year
 # Imports
 import os
 import datetime
@@ -53,7 +53,7 @@ for y in years:
         day_pos = year_pos+"/"+str(d)
         if MAKE_CODE_TEMPLATE and not os.path.exists(day_pos+"/code.py"):
             code = open(day_pos+"/code.py", "w+")
-            code.write("# Advent of code Year "+str(y)+" Day "+str(d)+" solution\n# Author = "+author+"\n# Date = "+date+"\n\nimport time\n\nwith open((__file__.rstrip(\"code.py\")+\"input.txt\"), 'r') as input_file:\n    input = input_file.read().split(\"\n\")\n\n\n########### PART ONE ##################\nprint(\"Starting Part One\")\nstart_time = time.time()\n\n\npart_one_time = time.time() - start_time\nprint(\"Part One ({time} s): {value}\".format(time = round(part_one_time,3), value = str(None)))\n\n########### PART TWO ##################\nprint(\"Starting Part Two\")\n\nstart_time = time.time()\n\n\npart_two_time = time.time() - start_timeprint(\"Part Two ({time} s): {value}\".format(time = round(part_two_time,3), value = str(None)))")
+            code.write("# Advent of code Year "+str(y)+" Day "+str(d)+" solution\n# Author = "+author+"\n# Date = "+date+"\n\nimport time\n\nwith open((__file__.rstrip(\"code.py\")+\"input.txt\"), 'r') as input_file:\n    input = input_file.read().split(\"\\n\")\n\n\n########### PART ONE ##################\nprint(\"Starting Part One\")\nstart_time = time.time()\n\n\npart_one_time = time.time() - start_time\nprint(\"Part One ({time} s): {value}\".format(time = round(part_one_time,3), value = str(None)))\n\n########### PART TWO ##################\nprint(\"Starting Part Two\")\nstart_time = time.time()\n\n\n\npart_two_time = time.time() - start_time\nprint(\"Part Two ({time} s): {value}\".format(time = round(part_two_time,3), value = str(None)))")
             code.close()
         if DOWNLOAD_INPUTS and (not os.path.exists(day_pos+"/input.txt") or OVERWRITE)and USER_SESSION_ID != "":
             done = False
