@@ -54,10 +54,11 @@ for i,line in enumerate(input):
                 fileStruct[''.join(curDirPath[:-i])] += int(line[0])
 
 # now find all directories < 100000 in size
+MAX_FILE_SIZE = 100000
 totalSize = 0
 for i,dir in enumerate(fileStruct):
     size = fileStruct[dir]
-    if size <= 100000: totalSize += size
+    if size <= MAX_FILE_SIZE: totalSize += size
 
 part_one_time = time.time() - start_time
 print("Part One ({time} s): {value}".format(time = round(part_one_time,3), value = str(totalSize)))
@@ -66,8 +67,8 @@ print("Part One ({time} s): {value}".format(time = round(part_one_time,3), value
 print("Starting Part Two")
 start_time = time.time()
 
-totalSpace = 70000000
-spaceNeeded = 30000000
+TOTAL_SPACE = 70000000
+SPACE_NEEDED = 30000000
 usedSpace = fileStruct['/']
 unusedSpace = totalSpace - usedSpace
 print("Current used space: {usedSpace}, unused space: {unused}".format(usedSpace =  usedSpace, unused = unusedSpace))
