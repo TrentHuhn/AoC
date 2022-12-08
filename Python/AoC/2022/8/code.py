@@ -34,8 +34,6 @@ def isVisible(yLoc,xLoc,forest):
 
 def computeScenicScore(yLoc,xLoc,forest):
     curHeight = forest[yLoc][xLoc]
-    score = 0
-    
     north,east,south,west = 0,0,0,0
 
     # test to the north
