@@ -86,7 +86,7 @@ with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
 ########### PART ONE ##################
 print("Starting Part One")
 start_time = time.time()
-visitedCoords = [(0,0)]
+visitedCoords = []
 curHeadPos = (0,0)
 curTailPos = (0,0)
 for i in range(0,len(input)): # loop through each instruction
@@ -104,8 +104,13 @@ print("Part One ({time} s): {value}".format(time = round(part_one_time,3), value
 print("Starting Part Two")
 start_time = time.time()
 
-visitedCoords = [(0,0)]
-curPos = [(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0),(0,0)] # use a tuple to represent current position of all 10 knots
+visitedCoords = []
+curPos = []
+NUM_KNOTS = 10
+# use a tuple to represent current position of all 10 knots
+for i in range(0,NUM_KNOTS):
+    curPos.append((0,0))
+
 for i in range(0,len(input)): # loop through each instruction
     line = input[i].split(' ')
     instr = line[0]
