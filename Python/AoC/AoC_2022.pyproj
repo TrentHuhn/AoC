@@ -4,13 +4,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f7fc544c-935b-4112-8099-6be546556873</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>2022\8\code.py</StartupFile>
+    <StartupFile>2022\9\code.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>AoC_2022</Name>
     <RootNamespace>AoC_2022</RootNamespace>
+    <InterpreterId>
+    </InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,6 +31,7 @@
     <Compile Include="2022\6\code.py" />
     <Compile Include="2022\7\code.py" />
     <Compile Include="2022\8\code.py" />
+    <Compile Include="2022\9\code.py" />
     <Compile Include="init.py">
       <SubType>Code</SubType>
     </Compile>
@@ -43,6 +46,7 @@
     <Folder Include="2022\6\" />
     <Folder Include="2022\7\" />
     <Folder Include="2022\8\" />
+    <Folder Include="2022\9\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="2022\1\input.txt" />
@@ -69,6 +73,9 @@
     <Content Include="2022\8\input.txt" />
     <Content Include="2022\8\link.url" />
     <Content Include="2022\8\statement.html" />
+    <Content Include="2022\9\input.txt" />
+    <Content Include="2022\9\link.url" />
+    <Content Include="2022\9\statement.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
