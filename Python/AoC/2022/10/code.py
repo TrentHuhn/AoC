@@ -12,10 +12,10 @@ def evaluate_cycle(cycle,x_val,strengths):
 
 def evaluate_cycle_pt2(cycle,x_val,output):
     pixel = '.'   
-    if len(output) <= (cycle - 1) // 40: output.append([]) # check if we have to add a new row to our output array
-    if (cycle - 1) % 40 in [x_val-1,x_val,x_val+1]: # use modulo to determine current horizontal position based on cycle #
+    if len(output) <= (cycle - 1) // HORZ_PIXELS: output.append([]) # use integer division to check if we have to add a new row to our output array
+    if (cycle - 1) % HORZ_PIXELS in [x_val-1,x_val,x_val+1]: # use modulo to determine current horizontal position based on cycle #
         pixel = '#'
-    output[(cycle - 1) // 40].append(pixel)
+    output[(cycle - 1) // HORZ_PIXELS].append(pixel)
     cycle += 1
     return cycle,output
 
@@ -55,7 +55,6 @@ start_time = time.time()
 x_val = 1
 cycle = 1
 HORZ_PIXELS = 40
-VERT_PIXELS = 6
 output = []
 val = 0
 for i,line in enumerate(input):
