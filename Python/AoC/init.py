@@ -48,9 +48,9 @@ for y in years:
     year_pos = base_pos + str(y)
     for d in (d for d in days if (y < last_advent_of_code_year or d <= last_advent_of_code_day)):
         print("    Day "+str(d));
-        if not os.path.exists(year_pos+"/"+str(d)):
-            os.mkdir(year_pos+"/"+str(d))
-        day_pos = year_pos+"/"+str(d)
+        if not os.path.exists(year_pos+"/"+str(d).zfill(2)):
+            os.mkdir(year_pos+"/"+str(d).zfill(2))
+        day_pos = year_pos+"/"+str(d).zfill(2)
         if MAKE_CODE_TEMPLATE and not os.path.exists(day_pos+"/code.py"):
             code = open(day_pos+"/code.py", "w+")
             code.write("# Advent of code Year "+str(y)+" Day "+str(d)+" solution\n# Author = "+author+"\n# Date = "+date+"\n\nimport time\n\nwith open((__file__.rstrip(\"code.py\")+\"input.txt\"), 'r') as input_file:\n    input = input_file.read().split(\"\\n\")\n\n\n########### PART ONE ##################\nprint(\"Starting Part One\")\nstart_time = time.time()\n\n\npart_one_time = time.time() - start_time\nprint(\"Part One ({time} s): {value}\".format(time = round(part_one_time,3), value = str(None)))\n\n########### PART TWO ##################\nprint(\"Starting Part Two\")\nstart_time = time.time()\n\n\n\npart_two_time = time.time() - start_time\nprint(\"Part Two ({time} s): {value}\".format(time = round(part_two_time,3), value = str(None)))")
@@ -60,7 +60,7 @@ for y in years:
             error_count = 0
             while(not done):
                 try:
-                    with requests.get(url=link+str(y)+"/day/"+str(d)+"/input", cookies={"session": USER_SESSION_ID}, headers={"User-Agent": USER_AGENT}) as response:
+                    with requests.get(url=link+str(y)+"/day/"+str(d).zfill(2)+"/input", cookies={"session": USER_SESSION_ID}, headers={"User-Agent": USER_AGENT}) as response:
                         if response.ok:
                             data = response.text
                             input = open(day_pos+"/input.txt", "w+")
