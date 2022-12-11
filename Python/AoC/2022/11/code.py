@@ -70,10 +70,8 @@ for i in range(0,NUM_ROUNDS):
             item = monkey.items.pop(0) # grab the first item in the list
             item = item*monkey.opr_mult + monkey.opr_add if not monkey.opr_square else item*item # step one - increase worry level
             item = item // 3 # step two - decrease worry level (use integer division)
-            if(item % monkey.test_val == 0):
-                monkeys_pt1[monkey.true_result].items.append(item)
-            else:
-                monkeys_pt1[monkey.false_result].items.append(item)
+            monkeys_pt1[monkey.true_result if item % monkey.test_val == 0 else monkey.false_result].items.append(item)
+            
             monkey.items_inspected += 1
 
 sizes = [m.items_inspected for m in monkeys_pt1]
@@ -103,11 +101,8 @@ for i in range(0,NUM_ROUNDS):
         while(monkey.items):
             item = monkey.items.pop(0) # grab the first item in the list
             item = item*monkey.opr_mult + monkey.opr_add if not monkey.opr_square else item*item # step one - increase worry level
-            # no longer decrease worry level each time an item is inspected
-            if(item % monkey.test_val == 0):
-                monkeys_pt2[monkey.true_result].items.append(item % product)
-            else:
-                monkeys_pt2[monkey.false_result].items.append(item % product)
+            # no longer decrease worry level each time an item is inspected            
+            monkeys_pt2[monkey.true_result if item % monkey.test_val == 0 else monkey.false_result].items.append(item % product)
             monkey.items_inspected += 1
 
 sizes = [m.items_inspected for m in monkeys_pt2]
