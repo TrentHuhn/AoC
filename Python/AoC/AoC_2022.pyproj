@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f7fc544c-935b-4112-8099-6be546556873</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>2022\9\code.py</StartupFile>
+    <StartupFile>2022\12\code.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -23,59 +23,76 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="2022\1\code.py" />
-    <Compile Include="2022\2\code.py" />
-    <Compile Include="2022\3\code.py" />
-    <Compile Include="2022\4\code.py" />
-    <Compile Include="2022\5\code.py" />
-    <Compile Include="2022\6\code.py" />
-    <Compile Include="2022\7\code.py" />
-    <Compile Include="2022\8\code.py" />
-    <Compile Include="2022\9\code.py" />
+    <Compile Include="2022\01\code.py" />
+    <Compile Include="2022\02\code.py" />
+    <Compile Include="2022\03\code.py" />
+    <Compile Include="2022\04\code.py" />
+    <Compile Include="2022\05\code.py" />
+    <Compile Include="2022\06\code.py" />
+    <Compile Include="2022\07\code.py" />
+    <Compile Include="2022\08\code.py" />
+    <Compile Include="2022\09\code.py" />
+    <Compile Include="2022\10\code.py" />
+    <Compile Include="2022\11\code.py" />
+    <Compile Include="2022\12\code.py" />
     <Compile Include="init.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="2022\" />
-    <Folder Include="2022\1\" />
-    <Folder Include="2022\2\" />
-    <Folder Include="2022\3\" />
-    <Folder Include="2022\4\" />
-    <Folder Include="2022\5\" />
-    <Folder Include="2022\6\" />
-    <Folder Include="2022\7\" />
-    <Folder Include="2022\8\" />
-    <Folder Include="2022\9\" />
+    <Folder Include="2022\01\" />
+    <Folder Include="2022\02\" />
+    <Folder Include="2022\03\" />
+    <Folder Include="2022\04\" />
+    <Folder Include="2022\05\" />
+    <Folder Include="2022\06\" />
+    <Folder Include="2022\07\" />
+    <Folder Include="2022\08\" />
+    <Folder Include="2022\09\" />
+    <Folder Include="2022\10\" />
+    <Folder Include="2022\11\" />
+    <Folder Include="2022\12\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="2022\1\input.txt" />
-    <Content Include="2022\1\link.url" />
-    <Content Include="2022\1\statement.html" />
-    <Content Include="2022\2\input.txt" />
-    <Content Include="2022\2\link.url" />
-    <Content Include="2022\2\statement.html" />
-    <Content Include="2022\3\input.txt" />
-    <Content Include="2022\3\link.url" />
-    <Content Include="2022\3\statement.html" />
-    <Content Include="2022\4\input.txt" />
-    <Content Include="2022\4\link.url" />
-    <Content Include="2022\4\statement.html" />
-    <Content Include="2022\5\input.txt" />
-    <Content Include="2022\5\link.url" />
-    <Content Include="2022\5\statement.html" />
-    <Content Include="2022\6\input.txt" />
-    <Content Include="2022\6\link.url" />
-    <Content Include="2022\6\statement.html" />
-    <Content Include="2022\7\input.txt" />
-    <Content Include="2022\7\link.url" />
-    <Content Include="2022\7\statement.html" />
-    <Content Include="2022\8\input.txt" />
-    <Content Include="2022\8\link.url" />
-    <Content Include="2022\8\statement.html" />
-    <Content Include="2022\9\input.txt" />
-    <Content Include="2022\9\link.url" />
-    <Content Include="2022\9\statement.html" />
+    <Content Include="2022\01\input.txt" />
+    <Content Include="2022\01\link.url" />
+    <Content Include="2022\01\statement.html" />
+    <Content Include="2022\02\input.txt" />
+    <Content Include="2022\02\link.url" />
+    <Content Include="2022\02\statement.html" />
+    <Content Include="2022\03\input.txt" />
+    <Content Include="2022\03\link.url" />
+    <Content Include="2022\03\statement.html" />
+    <Content Include="2022\04\input.txt" />
+    <Content Include="2022\04\link.url" />
+    <Content Include="2022\04\statement.html" />
+    <Content Include="2022\05\input.txt" />
+    <Content Include="2022\05\input_aoc_2022_day05_large.txt" />
+    <Content Include="2022\05\link.url" />
+    <Content Include="2022\05\statement.html" />
+    <Content Include="2022\06\input.txt" />
+    <Content Include="2022\06\link.url" />
+    <Content Include="2022\06\statement.html" />
+    <Content Include="2022\07\input.txt" />
+    <Content Include="2022\07\link.url" />
+    <Content Include="2022\07\statement.html" />
+    <Content Include="2022\08\input.txt" />
+    <Content Include="2022\08\link.url" />
+    <Content Include="2022\08\statement.html" />
+    <Content Include="2022\09\input.txt" />
+    <Content Include="2022\09\link.url" />
+    <Content Include="2022\09\statement.html" />
+    <Content Include="2022\10\input.txt" />
+    <Content Include="2022\10\input_sample.txt" />
+    <Content Include="2022\10\link.url" />
+    <Content Include="2022\10\statement.html" />
+    <Content Include="2022\11\input.txt" />
+    <Content Include="2022\11\link.url" />
+    <Content Include="2022\11\statement.html" />
+    <Content Include="2022\12\input.txt" />
+    <Content Include="2022\12\link.url" />
+    <Content Include="2022\12\statement.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
