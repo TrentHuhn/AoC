@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f7fc544c-935b-4112-8099-6be546556873</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>2022\12\code.py</StartupFile>
+    <StartupFile>2022\13\code.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -35,6 +35,7 @@
     <Compile Include="2022\10\code.py" />
     <Compile Include="2022\11\code.py" />
     <Compile Include="2022\12\code.py" />
+    <Compile Include="2022\13\code.py" />
     <Compile Include="init.py">
       <SubType>Code</SubType>
     </Compile>
@@ -53,6 +54,7 @@
     <Folder Include="2022\10\" />
     <Folder Include="2022\11\" />
     <Folder Include="2022\12\" />
+    <Folder Include="2022\13\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="2022\01\input.txt" />
@@ -93,6 +95,10 @@
     <Content Include="2022\12\input.txt" />
     <Content Include="2022\12\link.url" />
     <Content Include="2022\12\statement.html" />
+    <Content Include="2022\13\input.txt" />
+    <Content Include="2022\13\input_sample.txt" />
+    <Content Include="2022\13\link.url" />
+    <Content Include="2022\13\statement.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
