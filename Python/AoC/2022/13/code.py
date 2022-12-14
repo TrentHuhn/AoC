@@ -43,7 +43,7 @@ for i in range(0,len(input),3):
     line1 = input[i]
     line2 = input[i+1] if i + 1 < len(input) else None
     if line1.isupper() or line1.islower() or line2.isupper() or line2.islower(): # check if we have any alpha characters
-        print("Invalid line detected: {line}".format(line = line))
+        print("Invalid line detected")
         continue
 
     pairs.append((eval(line1), eval(line2))) # use eval to convert string into python nested lists
