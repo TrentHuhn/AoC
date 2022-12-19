@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f7fc544c-935b-4112-8099-6be546556873</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>2022\15\code.py</StartupFile>
+    <StartupFile>2022\17\code.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -38,6 +38,8 @@
     <Compile Include="2022\13\code.py" />
     <Compile Include="2022\14\code.py" />
     <Compile Include="2022\15\code.py" />
+    <Compile Include="2022\16\code.py" />
+    <Compile Include="2022\17\code.py" />
     <Compile Include="init.py">
       <SubType>Code</SubType>
     </Compile>
@@ -59,6 +61,8 @@
     <Folder Include="2022\13\" />
     <Folder Include="2022\14\" />
     <Folder Include="2022\15\" />
+    <Folder Include="2022\16\" />
+    <Folder Include="2022\17\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="2022\01\input.txt" />
@@ -109,6 +113,12 @@
     <Content Include="2022\15\input.txt" />
     <Content Include="2022\15\link.url" />
     <Content Include="2022\15\statement.html" />
+    <Content Include="2022\16\input.txt" />
+    <Content Include="2022\16\link.url" />
+    <Content Include="2022\16\statement.html" />
+    <Content Include="2022\17\input.txt" />
+    <Content Include="2022\17\link.url" />
+    <Content Include="2022\17\statement.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
