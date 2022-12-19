@@ -218,6 +218,7 @@ def build_tower_pt2(FINGERPRINT_ROWS):
                 cycle_complete = True
 
         # After our first FINGERPRINT_ROWS, set our fingerprint
+        # Need to play around with the # of buffer rows before we take our cycle fingerprint, somewhere between 2500 and 5000 rows
         if (not fingerprint_set and tower_height >= FINGERPRINT_ROWS and tower_height >= 5000):
             fingerprint_start_height = tower_height
             fingerprint_start_rock = i
