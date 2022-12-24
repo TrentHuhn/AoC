@@ -22,7 +22,7 @@ OVERWRITE = False          # If you really need to download the whole thing agai
 date = "December 2022"              # Date automatically put in the code templates.
 starting_advent_of_code_year = 2022 # You can go as early as 2015.
 last_advent_of_code_year = 2022     # The setup will download all advent of code data up until that date included
-last_advent_of_code_day = 17        # If the year isn't finished, the setup will download days up until that day included for the last year
+last_advent_of_code_day = 19        # If the year isn't finished, the setup will download days up until that day included for the last year
 # Imports
 import os
 import datetime
