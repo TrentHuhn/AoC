@@ -8,9 +8,7 @@ import os
 
 def bfs(walls, blizzards, node, target):
     minute = 0
-    lcm = math.lcm(max(walls,key=lambda pt:pt[0])[0]-2,max(walls,key=lambda pt:pt[1])[1]-2)
-    cur_nodes = {node} 
-    blizz_nodes = [b[0] for b in blizzards]
+    cur_nodes = {node}
     
     while target not in cur_nodes:
         # calculate new blizzard positions         
