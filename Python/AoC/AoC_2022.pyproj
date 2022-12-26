@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>f7fc544c-935b-4112-8099-6be546556873</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>2022\19\code.py</StartupFile>
+    <StartupFile>2022\24\code.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -42,6 +42,11 @@
     <Compile Include="2022\17\code.py" />
     <Compile Include="2022\18\code.py" />
     <Compile Include="2022\19\code.py" />
+    <Compile Include="2022\20\code.py" />
+    <Compile Include="2022\21\code.py" />
+    <Compile Include="2022\22\code.py" />
+    <Compile Include="2022\23\code.py" />
+    <Compile Include="2022\24\code.py" />
     <Compile Include="init.py">
       <SubType>Code</SubType>
     </Compile>
@@ -67,6 +72,11 @@
     <Folder Include="2022\17\" />
     <Folder Include="2022\18\" />
     <Folder Include="2022\19\" />
+    <Folder Include="2022\20\" />
+    <Folder Include="2022\21\" />
+    <Folder Include="2022\22\" />
+    <Folder Include="2022\23\" />
+    <Folder Include="2022\24\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="2022\01\input.txt" />
@@ -127,8 +137,24 @@
     <Content Include="2022\18\link.url" />
     <Content Include="2022\18\statement.html" />
     <Content Include="2022\19\input.txt" />
+    <Content Include="2022\19\input_sample.txt" />
     <Content Include="2022\19\link.url" />
     <Content Include="2022\19\statement.html" />
+    <Content Include="2022\20\input.txt" />
+    <Content Include="2022\20\link.url" />
+    <Content Include="2022\20\statement.html" />
+    <Content Include="2022\21\input.txt" />
+    <Content Include="2022\21\link.url" />
+    <Content Include="2022\21\statement.html" />
+    <Content Include="2022\22\input.txt" />
+    <Content Include="2022\22\link.url" />
+    <Content Include="2022\22\statement.html" />
+    <Content Include="2022\23\input.txt" />
+    <Content Include="2022\23\link.url" />
+    <Content Include="2022\23\statement.html" />
+    <Content Include="2022\24\input.txt" />
+    <Content Include="2022\24\link.url" />
+    <Content Include="2022\24\statement.html" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
