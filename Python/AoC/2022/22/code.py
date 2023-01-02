@@ -8,11 +8,6 @@ import re
 with open((__file__.rstrip("code.py")+"input.txt"), 'r') as input_file:
     input = input_file.read().split("\n")
 
-def add_edge(pos,add,edge):
-    if pos not in edge.keys():
-        edge[pos] = []
-    edge[pos].append(add)
-
 ########### PART ONE ##################
 print("Starting Part One")
 start_time = time.time()
@@ -77,22 +72,6 @@ print("Part One ({time} s): {value}".format(time = round(part_one_time,3), value
 ########### PART TWO ##################
 print("Starting Part Two")
 start_time = time.time()
-
-# Need to define edge transition dict
-# Each edge node contains:
-#  - Tuple containing 1st choice and 2nd choice
-#    - Each "choice" contains a new position and a new direction
-EDGE_SIZE = 50
-edge = {}
-(x_max, x_min),  (y_max, y_min) = [(max(x), min(x)) for x in zip(*board.keys())]
-for key,val in board.items():
-    # Top of board
-    if key[1] == 0:
-        # Left side
-        if key[0] >= 50 and key[0] < 100:
-            add_edge((key[1] - 1, key[0]), ((0,y_max-(2*EDGE_SIZE - key[0])),0), edge)        
-        if key[0] >= 100:
-            add_edge((key[1] - 1, key[0]), ((y_max,key[0]-EDGE_SIZE),3), edge)
 
 cur = min(list(filter(lambda elem: elem[0][1] == 0 and elem[1] == 0,board.items())))[0] # get first open space in the top row (y = 0)
 dir = 0 # start facing right
